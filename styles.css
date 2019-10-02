@@ -2,14 +2,51 @@
     --main-orange: #ECB16B;
     --main-green: #B0D07D;
     --main-cream: #F5ECD6;
+    --main-teal: #F0FFEE
 }
 
 body {
     margin: 0;
-    background: (black);
+    background:light white;
 }
 
 .header {
-    color: var(--main-cream);
-    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: lightgrey;
+    flex: auto;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: black;
+
 }
+
+.p {
+    color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    size: 50px;
+    text-align: center;
+
+}
+img {
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+
+  .p2 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    size: 100px;
+    text-align: left;
+
+}
+.resume {
+    float: left;
+    vertical-align: middle;
+  }
+
+
+
