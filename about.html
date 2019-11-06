@@ -26,9 +26,21 @@
                  Computer Sciences, Northeastern University. </p>
         </div>
 
+        <script>
+            function imgOver(id) {
+                document.getElementById(id).src="images/Profile.jpg"
+            }
+
+            function imgOut(id) {
+                document.getElementById(id).src="images/me.jpg"
+            }
+        </script>
+
         <div class="imgItem">
             <p>This website was created in Visual Studio code, written in HTML and CSS. </p>
-            <img width= 300 src="images/me.jpg" alt="a photo of me">
+            <a href="#" onmouseover="imgOver('first')" onmouseout="imgOut('first')">
+            <img src="images/me.jpg" alt="photo of me" id="first" height="400">
+            </a>
             <p> 
             I an aspiring software developer with a passion for art and design. I love
             the creativity and problem solving involved in writing programs, and I am hoping to continue
@@ -37,9 +49,17 @@
 
         <center> 
         <div>
-            <button id="funbutton" type="button" onclick="confettiStart()">
-                Click me!
+            <button onclick= "startFun(), stopFun()">
+                Click for a Surprise!
             </button>
+            <script>
+                function startFun() {
+                    confetti.start();
+                }
+                function stopFun() {
+                    confetti.stop();
+                }
+            </script>
         </div>
         </center> 
 
