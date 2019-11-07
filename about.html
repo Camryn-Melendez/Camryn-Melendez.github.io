@@ -30,7 +30,6 @@
             function imgOver(id) {
                 document.getElementById(id).src="images/Profile.jpg"
             }
-
             function imgOut(id) {
                 document.getElementById(id).src="images/me.jpg"
             }
@@ -40,7 +39,7 @@
             <p>This website was created in Visual Studio code, written in HTML and CSS and a 
                 touch of javascript. </p>
             <a href="#" onmouseover="imgOver('first')" onmouseout="imgOut('first')">
-            <img src="images/me.jpg" alt="photo of me" id="first" height="400">
+            <img src="images/me.jpg" alt="photo of me" id="first" height="400" width="400" style="object-fit: cover;">
             </a>
             <p> 
             I an aspiring software developer with a passion for art and design. I love
@@ -48,7 +47,23 @@
             to grow my technical skills as I continue my studies here at Northeastern.</p>
         </div>
 
+        <div class="imgItem" style="text-align: justify;">
+            <img src="images/san diego.jpg" alt="photo of me" height="400" width="400"> 
+            <p>
+                I was born in San Diego and have lived there my whole life. I left the West Coast for the East
+                Coast after deciding to pursue my undergrad at Northeastern University in Boston, MA.
+            </p>
+
+
+        </div>
+
         <center> 
+
+        <a href="https://github.com/Camryn-Melendez/Camryn-Melendez.github.io" style="font-size: x-large;">Go to GitHub!</a>
+                
+        <div style="padding: 50px;">
+
+
         <div>
             <button onclick= "startFun(), stopFun()">
                 Click for a Surprise!
@@ -65,8 +80,7 @@
         
 
         <div style="padding: 50px;">
-        <a href="https://github.com/Camryn-Melendez/Camryn-Melendez.github.io">Go to GitHub!</a>
-        </p>
+        
     </div>
 </center> 
 
