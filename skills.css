@@ -1,0 +1,49 @@
+body {
+    margin:0;
+}
+
+.header {
+    background-color: rgba(202, 202, 202, 0.644);
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height:140px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    padding-bottom: 10px;
+
+}
+
+.title {
+    font-size: 4em;
+}
+
+#sub-header {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.page-content {
+    display:flex;
+    flex:auto;
+    height:100%;
+    align-items: flex-start;
+    position:absolute;
+    width:100%;
+}
+
+.side-bar {
+    display: inline-block;
+    width: 25%;
+    border-right: 2px solid rgba(202, 202, 202, 0.644);
+    height:inherit;
+
+}
+
+.main-content {
+    display: inline-block;
+    width: 75%;
+    height: inherit;
+
+
+}
