@@ -5,24 +5,42 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!--Your CSS-->
-        <link rel="stylesheet" href="styles.css">
-            
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-            
-            
+        <link rel="stylesheet" href="styles/contact.css">
+
         <title>About</title>
         <meta name="description" content="Studio Art page">
         <meta name="author" content="Camryn Melendez">
             
     </head>
     <body>
-        <div class="header">
-            <p>Contact me</p>
-            <p class="subheading">Email: melendez.c@husky.neu.edu</p>
-        </div>
         
+        <div class="header">
+            <div class="title">Contact Me!</div> 
+            <p ID="sub-header">I would love to hear your feedback about my work.</p>
+        </div>
+
+        <div class= "contact-form-div">
+            <form ID="contact-form" name="contact-form" action="contact.html" method="post">
+                <div class="name-text-field">
+                    <label ID="name-label" class="form-field-title"> Name </label> <br>
+                    <input ID="name-input" type="text" name="name" value=""> <br>
+                </div>
+
+                <div class="email-text-field">
+                    <label ID="email-label" class="form-field-title"> Email </label> <br>
+                    <input ID="email-input" type="text" name="email" value=""> <br>
+                </div>
+
+                <div class="feedback-area-field">
+                    <textarea class="feedback-input" rows="20" cols="50"></textarea>
+                </div>
+
+                <input ID="submit" type="submit" value="submit" name="submit"> 
+            </form>
+        </div>
+
+        <div class="fyi">
+            This form is not yet functional. Pressing the submit button has no effect whatsoever.
+        </div>
     </body>
 </html>

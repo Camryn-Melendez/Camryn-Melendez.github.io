@@ -2,18 +2,9 @@
 <html>
     <head>
         <script>src="main.js"</script> 
-        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!--Your CSS-->
-        <link rel="stylesheet" href="styles.css">
-            
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-            
-            
+        <link rel="stylesheet" href="styles/about.css">
         <title>About</title>
         <meta name="description" content="Studio Art page">
         <meta name="author" content="Camryn Melendez">
@@ -21,9 +12,8 @@
     </head>
     <body>
         <div class="header">
-            <p>About Me!</p>
-            <p class="subheading">Student at Khoury College of
-                 Computer Sciences, Northeastern University. </p>
+            <div class="title">About me</div> 
+            <p ID="sub-header">Student at Khoury College of Computer Sciences, Northeastern university.</p>
         </div>
 
         <script>
@@ -35,56 +25,40 @@
             }
         </script>
 
-        <div class="imgItem" style="text-align: justify;">
-            <p>This website was created in Visual Studio code, written in HTML and CSS and a 
-                touch of javascript. </p>
+        <div class="img-block">
             <a href="#" onmouseover="imgOver('first')" onmouseout="imgOut('first')">
             <img src="images/me.jpg" alt="photo of me" id="first" height="400" width="400" style="object-fit: cover;">
             </a>
-            <p> 
-            I an aspiring software developer with a passion for art and design. I love
+            <p> I an aspiring software developer with a passion for art and design. I love
             the creativity and problem solving involved in writing programs, and I am hoping to continue
             to grow my technical skills as I continue my studies here at Northeastern.</p>
         </div>
 
-        <div class="imgItem" style="text-align: justify;">
+        <div class="img-block">
             <img src="images/san diego.jpg" alt="photo of me" height="400" width="400"> 
-            <p>
-                I was born in San Diego and have lived there my whole life. I left the West Coast for the East
-                Coast after deciding to pursue my undergrad at Northeastern University in Boston, MA.
-            </p>
+            <p>I was born in San Diego and have lived there my whole life. I left the West Coast for the East
+               Coast after deciding to pursue my undergrad at Northeastern University in Boston, MA.</p>
+         </div>
 
+         <footer>
+             <div class="github-link">
+                <a ID="github-link" href="https://github.com/Camryn-Melendez/Camryn-Melendez.github.io">Go to GitHub!</a>
+            </div>
+            <div>
+                <button ID="surprise-button" onclick= "startFun(), stopFun()">
+                    Click for a Surprise!
+                </button>
+                <script>
+                    function startFun() {
+                        confetti.start();
+                    }
+                    function stopFun() {
+                        confetti.stop();
+                    }
+                </script>
+            </div>
+         </footer>
 
-        </div>
-
-        <center> 
-
-        <a href="https://github.com/Camryn-Melendez/Camryn-Melendez.github.io" style="font-size: x-large;">Go to GitHub!</a>
-                
-        <div style="padding: 50px;">
-
-
-        <div>
-            <button onclick= "startFun(), stopFun()">
-                Click for a Surprise!
-            </button>
-            <script>
-                function startFun() {
-                    confetti.start();
-                }
-                function stopFun() {
-                    confetti.stop();
-                }
-            </script>
-        </div>
-        
-
-        <div style="padding: 50px;">
-        
-    </div>
-</center> 
-
-             
         <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script> 
-
     </body>
+</html>

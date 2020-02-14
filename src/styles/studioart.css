@@ -2,7 +2,6 @@
     --transparent-gray: rgba(185, 184, 184, 0.644);
     --transparent-blue: rgba(202, 210, 212, 0.822);
     --hover-gray: rgba(168, 166, 166, 0.726);
-    --light-transparent-gray: rgba(226, 226, 226, 0.822);
 
 }
 
@@ -84,6 +83,5 @@ img {
 #back-to-top-button:hover {
     background-color: var(--hover-gray);
 }
-
 
 
