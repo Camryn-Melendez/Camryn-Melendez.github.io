@@ -2,43 +2,227 @@
 <html>
     <head>
         <title>Skills</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
         <link rel="stylesheet" href="styles/skills.css" title="Skills Styles"/>
+
     </head>
     <body>
-        <script type="text/javascript">
-            alert("Skills page coming soon!")
-        </script>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Art
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="studioart.html">Studio Art</a>
+                            <a class="dropdown-item" href="graphicdesign.html">Graphic Design</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Computer Science
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="skills.html">Skills</a>
+                            <a class="dropdown-item" href="experience.html">Experience</a>
+                            <a class="dropdown-item" href="projects.html">Projects</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <div class="header">
             <div class="title">Skills</div> 
             <p ID="sub-header">Technologies, languages, and tools I have come to know and love.</p>
         </div>
+
         <div class="page-content">
+
             <div class="side-bar">
                 <ul>
-                    <li>Languages</li>
-                        <ul>
-                            <li>Java</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>PHP</li>
-                        </ul>
-                    <li>Version Control</li>
-                        <ul>
-                            <li>Git + GitHub</li>
-                            <li>Subversion</li>
-                        </ul>
+                    <li ID="languages-button">Languages</li>
+                    <li ID="vcs-button">Version Control</li>
+                    <li ID="coursework-button">Relevant Coursework</li>
                 </ul>
             </div>
             <div class="main-content">
-                <h2>Languages</h2>
-                <li>Java</li>
-                    <p>The first industrial programming language I learned was Java. It was first introduced 
-                        in my Fundamentals of Computer Science 2 class, and I gained a more extensive knowledge
-                        in my Object Oriented Design class the following year. 
-                    </p>
+
+                <p>Languages</p>
+                <div class="accordion" id="accordionExample">
+
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Java
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          Java was the first industrial language I learned, and I was first introduced to it in January 2019 in my Fundamentals of 
+                          Computer Science 2 class. My knowledge of Java grew significantly throughout my Object Oriented Design class the following year.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                HTML + CSS
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                I am self taught in HTML and CSS, however my knowledge has been expanded by my first co-op at Boston Globe Media as an Associate Web Developer.
+                                Creating this site was my first exposure to the languages, and I have continued to expand this knowledge as I add more and more to this site.
+                                <h6>Some projects include:</h6>
+                                <ul>
+                                    <li><a href="https://github.com/Camryn-Melendez/Camryn-Melendez.github.io">This website!</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                PHP
+                            </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                PHP is the newest language in my skill set and the first scripting language I have learned. I would consider myself proficient in PHP, 
+                                however I still have much to learn.
+                                <h6>Some projects include:</h6>
+                                <ul>
+                                    <li><a href="https://github.com/Camryn-Melendez/events_calendar" target="_blank">Events Calendar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Version Control</p>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                Git + Github
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                            I have a solid understanding of git, both at the command line as well as in a graphical user interface. I also have experience with the workflow
+                            and with the numerous commands/steps taken in this system. This website is hosted on GitHub, and all of the source code is available via this platform. 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                Subversion
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                            I use Subversion everyday on the job at Boston Globe Media, and I understand the fundamental flow and structure of this version control system.
+                            Knowledge of more than one VCS has allowed me to draw distinctions between the two, which has solidified my understanding of both systems.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Relevant Coursework</p>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseOne">
+                                Object Oriented Design
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                            class description
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
+                                Fundamentals of Computer Science I & II
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                            class description
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+                                Logic and Computation
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                            class description
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <script src="scripts/skills.js"></script>
+
     </body>
 </html>
 
