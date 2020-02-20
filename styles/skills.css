@@ -9,7 +9,6 @@
 body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    height: 100%;
 }
 
 .header {
@@ -57,7 +56,7 @@ body {
 
 .side-bar li {
     padding: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid white;
 }
 
 li:hover {
@@ -71,12 +70,13 @@ li:hover {
     margin: 25px;
     left: 25%;
     height: 100%;
-    width: 100%
+    width: 100%;
 
 }
 
 .main-content h6 {
     padding-top: 10px;
+    border-top: 2px solid var(--transparent-blue);
 }
 
 .accordion {
