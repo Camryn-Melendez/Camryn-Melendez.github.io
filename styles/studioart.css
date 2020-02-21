@@ -55,6 +55,7 @@ body {
 }
 
 p {
+    font-size: 0.9em;
     padding-left: 20px;
     padding-right: 20px;
     color: black;
