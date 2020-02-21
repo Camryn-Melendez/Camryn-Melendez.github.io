@@ -6,12 +6,6 @@
 
 }
 
-body {
-    margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: var(--transparent-blue);
-}
-
 .page-content {
     margin: 30px;
     margin-top: 10px;
