@@ -9,6 +9,7 @@
 /* Page-content is one of three divs in the body. 
    Side-bar and main-content are the two child divs. */
 
+
 .page-content {
     width: 100%;
     display: flex;

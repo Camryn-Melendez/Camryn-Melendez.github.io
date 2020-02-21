@@ -6,32 +6,7 @@
 
 }
 body {
-    margin: 0;
     background-color: var(--transparent-blue);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.header {
-    background-color: var(--transparent-gray);
-    height: auto;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    padding-bottom: 10px;
-    display: flex;
-
-}
-
-.title {
-    font-size: 4em;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 50px;
-}
-
-#sub-header {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    padding-top: 100px;
-    color:white;
 }
 
 .contact-form-div {

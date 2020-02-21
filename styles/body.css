@@ -4,19 +4,19 @@
     --hover-gray: rgba(168, 166, 166, 0.726);
     --light-transparent-gray: rgba(226, 226, 226, 0.822);
     --header: #e9ecef;
+    --header-font: rgba(0, 0, 0, 0.795)
 
 }
 
 body {
     margin: 0;
-    background-color: var(--transparent-blue);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .header {
     background-color: var(--header);
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: black;
+    color: var(--header-font);
     padding-bottom: 10px;
     display: flex;
     width: 100%;
@@ -33,5 +33,5 @@ body {
     font-size: 1.2em;
     margin-bottom: 10px;
     padding-top: 100px;
-    color:black;
+    color: var(--header-font);
 }
