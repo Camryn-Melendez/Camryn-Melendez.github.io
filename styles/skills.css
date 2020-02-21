@@ -17,6 +17,7 @@ body {
     color: white;
     padding-bottom: 10px;
     display: flex;
+    width: 100%;
 }
 
 .title {
@@ -33,18 +34,34 @@ body {
     color:white;
 }
 
+/* Page-content is one of three divs in the body. 
+   Side-bar and main-content are the two child divs. */
+
 .page-content {
     width: 100%;
     display: flex;
-    align-items: flex;
+    align-items: flex-start;
+    position: sticky;
+    top: 0px;
 }
 
 .side-bar {
     background-color: var(--transparent-blue);
     font-size: 1.2em;
-    width: 25%;
+    width: fit-content;
+    height: 100vh;
     display: inline-block;
     overflow: hidden;
+    position: sticky;
+    top: 0px;
+}
+
+.main-content {
+    display: inline-block;
+    margin: 25px;
+    width: 100%;
+    height: fit-content;
+    display: block;
 }
 
 .side-bar ul {
@@ -65,15 +82,6 @@ li:hover {
     border-radius: 4px;
 }
 
-.main-content {
-    display: inline-block;
-    margin: 25px;
-    left: 25%;
-    height: 100%;
-    width: 100%;
-
-}
-
 .main-content h6 {
     padding-top: 10px;
     border-top: 2px solid var(--transparent-blue);
@@ -85,6 +93,10 @@ li:hover {
 }
 .accordion button {
     color: black;
+}
+
+#collapseTen {
+    border-bottom: 1px solid var(--transparent-gray);
 }
 
 p {
