@@ -6,34 +6,6 @@
 
 }
 
-body {
-    margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.header {
-    background-color: var(--transparent-gray);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    padding-bottom: 10px;
-    display: flex;
-    width: 100%;
-}
-
-.title {
-    font-size: 4em;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 50px;
-}
-
-#sub-header {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    padding-top: 100px;
-    color:white;
-}
-
 /* Page-content is one of three divs in the body. 
    Side-bar and main-content are the two child divs. */
 

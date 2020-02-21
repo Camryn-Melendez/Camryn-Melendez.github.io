@@ -3,6 +3,7 @@
     --transparent-blue: rgba(201, 209, 211, 0.822);
     --hover-gray: rgba(168, 166, 166, 0.726);
     --light-transparent-gray: rgba(226, 226, 226, 0.822);
+    --header: #e9ecef;
 
 }
 
@@ -12,16 +13,15 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
 .header {
-    background-color: var(--transparent-gray);
-    height: auto;
+    background-color: var(--header);
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    color: black;
     padding-bottom: 10px;
     display: flex;
-
+    width: 100%;
 }
+
 .title {
     font-size: 4em;
     padding-right: 30px;
@@ -32,40 +32,6 @@ body {
 #sub-header {
     font-size: 1.2em;
     margin-bottom: 10px;
-    padding-top: 70px;
-    color:white;
+    padding-top: 100px;
+    color:black;
 }
-
-
-.page-content {
-    margin-top:20px;
-    margin-left: 50px;
-    padding: 30px;
-    text-align: center;
-
-}
-
-.img-block {
-    display: flex;
-    align-items: flex-start;
-    height: 500px;
-    overflow: hidden;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin:30px;
-    padding-top: 20px;
-    text-align: center;
-    
-}
-
-p {
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: left;
-    color: black;
-}
-
-
-img {
-    width: 200px;
-    height:auto;
-   }
