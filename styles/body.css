@@ -18,11 +18,11 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: var(--header-font);
     padding-bottom: 10px;
-    display: flex;
     width: 100%;
 }
 
 .title {
+    display: inline-block;
     font-size: 4em;
     padding-right: 30px;
     padding-left: 30px;
@@ -30,8 +30,10 @@ body {
 }
 
 #sub-header {
+    display: inline-block;
     font-size: 1.2em;
     margin-bottom: 10px;
-    padding-top: 100px;
+    top: 120px;
     color: var(--header-font);
+    padding-left: 30px;
 }
