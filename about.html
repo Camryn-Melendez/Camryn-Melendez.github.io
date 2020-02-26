@@ -67,26 +67,18 @@
             <p ID="sub-header">Student in Khoury College of Computer Sciences, Northeastern university.</p>
         </div>
 
-        <script>
-            function imgOver(id) {
-                document.getElementById(id).src="images/Profile.jpg"
-            }
-            function imgOut(id) {
-                document.getElementById(id).src="images/me.jpg"
-            }
-        </script>
-
-        <div class="img-block">
-            <a href="#" onmouseover="imgOver('first')" onmouseout="imgOut('first')">
-            <img src="images/me.jpg" alt="photo of me" id="first" height="400" width="400" style="object-fit: cover;">
+        <div class="profile-header" ID="profile-header-me">Who am I?</div>
+        <div class="profile" ID="profile-me">
+            <img src="images/me.jpg" alt="photo of me" id="photo">
             </a>
             <p> I an aspiring software developer with a passion for art and design. I love
             the creativity and problem solving involved in writing programs, and I am hoping to continue
-            to grow my technical skills as I continue my studies here at Northeastern.</p>
+            to grow my technical skills as I continue my studies at Northeastern.</p>
         </div>
 
-        <div class="img-block">
-            <img src="images/san diego.jpg" alt="photo of me" height="400" width="400"> 
+        <div class="profile-header">Where am I from?</div>
+        <div class="profile" ID="profile-about">
+            <img src="images/san diego.jpg" alt="photo of me"> 
             <p>I was born in San Diego and have lived there my whole life. I left the West Coast for the East
                Coast after deciding to pursue my undergrad at Northeastern University in Boston, MA.</p>
          </div>
@@ -121,5 +113,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+        <script src="scripts/about.js"></script>
     </body>
 </html>
